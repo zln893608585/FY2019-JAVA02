@@ -1,11 +1,28 @@
-package com.login;
+package com.neuedu.pojo;
 
 public class User {
-
 	public String username;
 	public String password;
 	public String name;
 	public String email;
+	
+	public User() {
+		super();
+	};
+	
+	public User(String username, String password) {
+		
+		super();
+		this.username=username;
+		this.password=password;
+	}
+	public User(String username, String password, String name, String email) {
+		super();
+		this.username=username;
+		this.password=password;
+		this.name=name;
+		this.email=email;
+	}
 	
 	public String getUsername() {
 		return username;
